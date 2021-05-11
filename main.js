@@ -61,8 +61,8 @@ Ball.prototype.collisionDetect = function () {
                 balls[j].color = this.color = 'rgb(' + random(0, 255) + ',' + random(0, 255) + ',' + random(0, 255) + ')';
                 balls[j].size = this.size = random(this.size - 3, this.size + 3);
                 if (balls[j].size > 20) {
-                    balls[j].velX = this.velx = random(this.x - 3 + this.x + this.y / 4, this.x * this.y * 3 + 60);
-                    balls[j].vely = this.vely = random(this.y - 3 + this.y + this.x / 4, this.y + this.x * 3 + 60);
+                    balls[j].velX = this.velx = random(this.x - 3 + this.x + this.y / 3/2, this.x * this.y * 3 + 60);
+                    balls[j].vely = this.vely = random(this.y - 3 + this.y + this.x / 4/3, this.y + this.x * 3 + 60);
                 }
                 if (balls[j].size <= 20) {
                     balls[j].velX = this.velx = random(this.x - 3 + this.x + this.y / 4, this.x + 6);
